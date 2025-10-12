@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <div class="py-5 text-center">
+        <h2>Administrator Home</h2>
+        <p class="lead">This is the admin homepage. Use the navigation 'Site' to toggle to client site.</p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Site Management</h5>
+                    <p class="card-text">Placeholder links to admin functions.</p>
+                    <a class="btn btn-outline-primary" asp-area="Admin" asp-controller="Home" asp-action="Index">Refresh</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
