@@ -1,7 +1,16 @@
+using AirBB.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddMemoryCache();
+builder.Services.AddSession();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<AirBBDbcontext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("AirBBDbcontextCon")));
 
 var app = builder.Build();
 
@@ -15,6 +24,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseRouting();
+app.UseSession();
 
 app.UseAuthorization();
 

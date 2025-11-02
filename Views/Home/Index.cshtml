@@ -1,27 +1,95 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model AirBB.Models.AirBBViewModels
+
+@{
+    ViewData["Title"] = "Home";
 }
 
-<section class="home-hero">
-    <div class="hero-overlay">
-        <div class="container h-100 d-flex align-items-center justify-content-center">
-            <div class="card p-4 shadow-sm home-card" style="max-width:900px; width:100%;">
-                <h1 class="mb-3">Find your next stay (Search coming soon!)</h1>
-                <form class="row g-2">
-                    <div class="col-md-5">
-                        <input class="form-control" placeholder="Where are you going?" />
+<div class="container my-4">
+    <h2 class="mb-4">Find Your Stay</h2>
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card p-3">
+                <h5>Filter</h5>
+                <form method="post" asp-action="Index">
+                    <div class="mb-3">
+                        <label for="ActiveLocation" class="form-label">Where</label>
+                        <select name="activeLocation" class="form-control">
+                            <option value="all" class="@Model.CheckActiveLocation("all")">All</option>
+                            @foreach (AirBB.Models.Location C in Model.Location)
+                            {
+                                if (Model.ActiveLocation == C.LocationId.ToString())
+                                {
+                                    <option value="@C.LocationId" selected="true" class="@Model.CheckActiveLocation(C.LocationId.ToString())">
+                                        @C.Name
+                                    </option>
+                                }
+                                else
+                                {
+                                    <option value="@C.LocationId" class="@Model.CheckActiveLocation(C.LocationId.ToString())">
+                                        @C.Name
+                                    </option>
+                                }
+                            }
+                        </select>
                     </div>
-                    <div class="col-md-3">
-                        <input class="form-control" placeholder="Check-in - Check-out" />
+
+                    <div class="mb-3">
+                        <label for="ActiveCheckInDate" class="form-label">Check-in Date</label>
+                        <input class="form-control" id="ActiveCheckInDate" name="ActiveCheckInDate" 
+                               value="@(Model.ActiveCheckInDate != "all" ? Model.ActiveCheckInDate : "")" autocomplete="off" />
                     </div>
-                    <div class="col-md-2">
-                        <input class="form-control" placeholder="Guests" />
+
+                    <div class="mb-3">
+                        <label for="ActiveCheckOutDate" class="form-label">Check-out Date</label>
+                        <input class="form-control" id="ActiveCheckOutDate" name="ActiveCheckOutDate" 
+                               value="@(Model.ActiveCheckOutDate != "all" ? Model.ActiveCheckOutDate : "")" autocomplete="off" />
                     </div>
-                    <div class="col-md-2 d-grid">
-                        <button class="btn btn-primary">Search</button>
+
+                    <div class="mb-3">
+                        <label for="ActiveNoOfGuests" class="form-label">Guests</label>
+                        <input type="number" class="form-control" id="ActiveNoOfGuests" name="ActiveNoOfGuests" 
+                               min="1" value="@(Model.ActiveNoOfGuests != "all" ? Model.ActiveNoOfGuests : "1")" />
                     </div>
+
+                    <button type="submit" class="btn btn-primary w-100">Apply Filters</button>
                 </form>
             </div>
         </div>
+
+        <div class="col-md-9">
+            <div class="row">
+                @if (Model.Residence != null && Model.Residence.Any())
+                {
+                    @foreach (var res in Model.Residence)
+                    {
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <img src="~/images/@res.ResidencePicture" class="card-img-top" alt="@res.Name" />
+                                <div class="card-body">
+                                    <h5 class="card-title">@res.Name</h5>
+                                    <p class="card-text"><strong>Location:</strong> @res.Location.Name</p>
+                                    <p class="card-text">
+                                        <strong>Guests:</strong> @res.GuestNumber |
+                                        <strong>Bedrooms:</strong> @res.BedroomNumber |
+                                        <strong>Bathrooms:</strong> @res.BathroomNumber
+                                    </p>
+                                    <p class="card-text"><strong>Price per night:</strong> @res.PricePerNight</p>
+                                    <a asp-action="Details" asp-route-id="@res.ResidenceId" class="btn btn-success w-100">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="col-12">
+                        <div class="alert alert-info">
+                            No residences found for your selected filters.
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
     </div>
-</section>
+</div>

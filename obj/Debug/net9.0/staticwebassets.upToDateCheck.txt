@@ -63,7 +63,11 @@ C:\Users\yache\OneDrive\Desktop\Juo_J\FALL_2025\Aravind\AirBB\AirBB\wwwroot\js\s
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\AirBnBLabel.png
+wwwroot\images\atl_house.png
 wwwroot\images\Background.png
+wwwroot\images\chi_loop.png
+wwwroot\images\miami_beach.png
+wwwroot\images\ny_studio.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

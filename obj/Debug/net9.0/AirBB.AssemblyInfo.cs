@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AirBB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4536052a02d94250446d8fb11055312f395b216")]
 [assembly: System.Reflection.AssemblyProductAttribute("AirBB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AirBB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

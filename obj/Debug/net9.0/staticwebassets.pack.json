@@ -21,6 +21,22 @@
       "PackagePath": "staticwebassets\\images\\Background.png"
     },
     {
+      "Id": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\wwwroot\\images\\atl_house.png",
+      "PackagePath": "staticwebassets\\images\\atl_house.png"
+    },
+    {
+      "Id": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\wwwroot\\images\\chi_loop.png",
+      "PackagePath": "staticwebassets\\images\\chi_loop.png"
+    },
+    {
+      "Id": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\wwwroot\\images\\miami_beach.png",
+      "PackagePath": "staticwebassets\\images\\miami_beach.png"
+    },
+    {
+      "Id": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\wwwroot\\images\\ny_studio.png",
+      "PackagePath": "staticwebassets\\images\\ny_studio.png"
+    },
+    {
       "Id": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

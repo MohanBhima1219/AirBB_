@@ -1,0 +1,42 @@
+﻿@model AirBB.Models.AirBBViewModels
+@{
+    ViewData["Title"] = "Residence Details";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-lg p-4">
+        <h2 class="mb-3">@Model.Residences.Name</h2>
+        <p class="text-muted">@Model.Residences.Location?.Name</p>
+
+        <hr />
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <strong>Guests:</strong> @Model.Residences.GuestNumber
+            </div>
+            <div class="col-md-6">
+                <strong>Bedrooms:</strong> @Model.Residences.BedroomNumber
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <strong>Bathrooms:</strong> @Model.Residences.BathroomNumber
+            </div>
+            <div class="col-md-6">
+                <strong>Price per night:</strong> 
+                <span class="text-success fw-bold">@Model.Residences.PricePerNight</span>
+            </div>
+        </div>
+
+        <div class="mt-4 d-flex justify-content-between">
+            <a asp-action="Index"
+               asp-route-activeLocation="@Model.ActiveLocation"
+               asp-route-activeCheckInDate="@Model.ActiveCheckInDate"
+               asp-route-activeCheckOutDate="@Model.ActiveCheckOutDate"
+               asp-route-activeNoOfGuests="@Model.ActiveNoOfGuests"
+            class="btn btn-secondary">← Back to Home</a>
+            <a asp-action="Reserve" asp-route-id="@Model.Residences.ResidenceId" class="btn btn-primary">Reserve</a>
+        </div>
+    </div>
+</div>
