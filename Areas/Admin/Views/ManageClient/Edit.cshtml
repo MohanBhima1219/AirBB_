@@ -1,0 +1,65 @@
+﻿@model AirBB.Models.Client
+@{
+    ViewData["Title"] = "Client Information";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-lg p-4">
+        <h2 class="mb-3">Client Information</h2>
+        <p class="text-muted">Please fill in the client details below.</p>
+
+        <hr />
+
+        <form asp-action="Edit" method="post">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label asp-for="Name" class="form-label fw-bold"></label>
+                    <input asp-for="Name" class="form-control" placeholder="Enter full name" />
+                    <input asp-for="ClientId" hidden/>
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="PhoneNumber" class="form-label fw-bold"></label>
+                    <input asp-for="PhoneNumber" class="form-control" placeholder="Enter phone number" />
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label asp-for="Email" class="form-label fw-bold"></label>
+                    <input asp-for="Email" class="form-control" placeholder="Enter email address" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="SSN" class="form-label fw-bold"></label>
+                    <input asp-for="SSN" class="form-control" placeholder="Enter SSN" />
+                    <span asp-validation-for="SSN" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label asp-for="DOB" class="form-label fw-bold"></label>
+                    <input asp-for="DOB" type="date" class="form-control" />
+                    <span asp-validation-for="DOB" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="UserType" class="form-label fw-bold"></label>
+                    <select asp-for="UserType" class="form-select">
+                        <option value="">-- Select User Type --</option>
+                        <option value="Owner">Owner</option>
+                        <option value="Admin">Admin</option>
+                        <option value="Client">Client</option>
+                    </select>
+                    <span asp-validation-for="UserType" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="mt-4 d-flex justify-content-between">
+                <a asp-action="List" asp-controller="ManageClient" class="btn btn-secondary">← Back to Clients</a>
+                <button type="submit" class="btn btn-primary">Save Client</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -23,12 +23,10 @@ namespace AirBB.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("DOB")
-                        .IsRequired()
+                    b.Property<DateTime>("DOB")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Email")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
@@ -36,6 +34,13 @@ namespace AirBB.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("PhoneNumber")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("SSN")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("UserType")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
@@ -47,26 +52,32 @@ namespace AirBB.Migrations
                         new
                         {
                             ClientId = 1,
-                            DOB = "07/08/2000",
+                            DOB = new DateTime(2000, 7, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "john.Doe@airbb.com",
                             Name = "John Doe",
-                            PhoneNumber = "555-000-0001"
+                            PhoneNumber = "555-000-0001",
+                            SSN = "232-24-2421",
+                            UserType = "Owner"
                         },
                         new
                         {
                             ClientId = 2,
-                            DOB = "07/08/2001",
+                            DOB = new DateTime(2001, 7, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "emy@airbb.com",
                             Name = "Emy",
-                            PhoneNumber = "555-000-0002"
+                            PhoneNumber = "555-000-0002",
+                            SSN = "123-45-6789",
+                            UserType = "Client"
                         },
                         new
                         {
                             ClientId = 3,
-                            DOB = "07/08/2002",
+                            DOB = new DateTime(2002, 7, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "anasmith@airbb.com",
                             Name = "Ana Smith",
-                            PhoneNumber = "555-000-0003"
+                            PhoneNumber = "555-000-0003",
+                            SSN = "235-74-7456",
+                            UserType = "Admin"
                         });
                 });
 
@@ -161,7 +172,13 @@ namespace AirBB.Migrations
                     b.Property<int>("BathroomNumber")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("BedroomNumber")
+                    b.Property<decimal>("BedroomNumber")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("BuiltYear")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("ClientId")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("GuestNumber")
@@ -172,6 +189,7 @@ namespace AirBB.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
+                        .HasMaxLength(50)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("PricePerNight")
@@ -184,6 +202,8 @@ namespace AirBB.Migrations
 
                     b.HasKey("ResidenceId");
 
+                    b.HasIndex("ClientId");
+
                     b.HasIndex("LocationId");
 
                     b.ToTable("Residence");
@@ -193,7 +213,9 @@ namespace AirBB.Migrations
                         {
                             ResidenceId = 1,
                             BathroomNumber = 1,
-                            BedroomNumber = 2,
+                            BedroomNumber = 2m,
+                            BuiltYear = new DateTime(2000, 2, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ClientId = 1,
                             GuestNumber = 4,
                             LocationId = 1,
                             Name = "Chicago Loop Apartment",
@@ -204,7 +226,9 @@ namespace AirBB.Migrations
                         {
                             ResidenceId = 2,
                             BathroomNumber = 1,
-                            BedroomNumber = 1,
+                            BedroomNumber = 1m,
+                            BuiltYear = new DateTime(1990, 1, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ClientId = 3,
                             GuestNumber = 2,
                             LocationId = 2,
                             Name = "New York Studio",
@@ -215,7 +239,9 @@ namespace AirBB.Migrations
                         {
                             ResidenceId = 3,
                             BathroomNumber = 3,
-                            BedroomNumber = 4,
+                            BedroomNumber = 4m,
+                            BuiltYear = new DateTime(2011, 3, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ClientId = 2,
                             GuestNumber = 8,
                             LocationId = 3,
                             Name = "Miami Beach House",
@@ -226,7 +252,9 @@ namespace AirBB.Migrations
                         {
                             ResidenceId = 4,
                             BathroomNumber = 2,
-                            BedroomNumber = 3,
+                            BedroomNumber = 3m,
+                            BuiltYear = new DateTime(2002, 5, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ClientId = 1,
                             GuestNumber = 6,
                             LocationId = 4,
                             Name = "Atlanta Suburban House",
@@ -248,11 +276,19 @@ namespace AirBB.Migrations
 
             modelBuilder.Entity("AirBB.Models.Residence", b =>
                 {
+                    b.HasOne("AirBB.Models.Client", "Client")
+                        .WithMany()
+                        .HasForeignKey("ClientId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("AirBB.Models.Location", "Location")
                         .WithMany()
                         .HasForeignKey("LocationId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Client");
 
                     b.Navigation("Location");
                 });

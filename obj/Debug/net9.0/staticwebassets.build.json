@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lzo6WiwquOnCZSTbhkOzHqzIK0kTGsc/CHHfKBpwAiQ=",
+  "Hash": "fhagqgfew6d9+woxWHp0tTqMBmGzunM5JQ1V0AmrMwU=",
   "Source": "AirBB",
   "BasePath": "_content/AirBB",
   "Mode": "Default",
@@ -311,6 +311,27 @@
       "OriginalItemSpec": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
+      "Identity": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\obj\\Debug\\net9.0\\compressed\\85dc8m3fkl-y3u62aeqbx.gz",
+      "SourceId": "AirBB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/AirBB",
+      "RelativePath": "js/past-year#[.{fingerprint=y3u62aeqbx}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\wwwroot\\js\\past-year.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "3tvyg8t1mc",
+      "Integrity": "hxXxDzUg724AQCEkK2JXUiVSoPOv3pB2DW9tlZJjrqM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\wwwroot\\js\\past-year.js"
+    },
+    {
       "Identity": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\obj\\Debug\\net9.0\\compressed\\865v6qy8sg-63fj8s7r0e.gz",
       "SourceId": "AirBB",
       "SourceType": "Discovered",
@@ -435,6 +456,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\obj\\Debug\\net9.0\\compressed\\9xpwyx7ohc-9p1k56r7jw.gz",
+      "SourceId": "AirBB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/AirBB",
+      "RelativePath": "js/minimum-age#[.{fingerprint=9p1k56r7jw}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\wwwroot\\js\\minimum-age.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "fk2tmnwm3n",
+      "Integrity": "P8RH8FdS8lxh2AKQMdGlDN+F0dsGL5Fl0rFovINBVMc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\wwwroot\\js\\minimum-age.js"
     },
     {
       "Identity": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\obj\\Debug\\net9.0\\compressed\\au1zdej4ub-ttgo8qnofa.gz",
@@ -1569,6 +1611,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\ny_studio.png"
+    },
+    {
+      "Identity": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\wwwroot\\js\\minimum-age.js",
+      "SourceId": "AirBB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\wwwroot\\",
+      "BasePath": "_content/AirBB",
+      "RelativePath": "js/minimum-age#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9p1k56r7jw",
+      "Integrity": "nbIrQbUKwJl9w+Jos6/y+GuhQXXsxvdaXiRfBkpHeH8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\minimum-age.js"
+    },
+    {
+      "Identity": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\wwwroot\\js\\past-year.js",
+      "SourceId": "AirBB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\wwwroot\\",
+      "BasePath": "_content/AirBB",
+      "RelativePath": "js/past-year#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y3u62aeqbx",
+      "Integrity": "Ehi55wrVidHvrB5W5joM7J41dWrVWn3V0rCIiO/JVCE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\past-year.js"
     },
     {
       "Identity": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\wwwroot\\js\\site.js",
@@ -2878,7 +2962,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Oct 2025 20:28:36 GMT"
+          "Value": "Fri, 14 Nov 2025 13:15:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2939,7 +3023,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Oct 2025 20:28:36 GMT"
+          "Value": "Fri, 14 Nov 2025 13:15:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2984,7 +3068,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Oct 2025 20:28:36 GMT"
+          "Value": "Fri, 14 Nov 2025 13:15:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3039,7 +3123,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Oct 2025 20:28:36 GMT"
+          "Value": "Fri, 14 Nov 2025 13:15:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3100,7 +3184,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Oct 2025 20:28:36 GMT"
+          "Value": "Fri, 14 Nov 2025 13:15:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3145,7 +3229,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Oct 2025 20:28:36 GMT"
+          "Value": "Fri, 14 Nov 2025 13:15:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3200,7 +3284,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Oct 2025 20:28:36 GMT"
+          "Value": "Fri, 14 Nov 2025 13:15:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3253,7 +3337,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Oct 2025 20:28:36 GMT"
+          "Value": "Fri, 14 Nov 2025 13:15:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3290,7 +3374,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Oct 2025 20:28:36 GMT"
+          "Value": "Fri, 14 Nov 2025 13:15:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3337,7 +3421,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Oct 2025 20:28:36 GMT"
+          "Value": "Fri, 14 Nov 2025 13:15:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3390,7 +3474,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Oct 2025 20:28:36 GMT"
+          "Value": "Fri, 14 Nov 2025 13:15:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3427,7 +3511,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Oct 2025 20:28:36 GMT"
+          "Value": "Fri, 14 Nov 2025 13:15:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4534,6 +4618,602 @@
         {
           "Name": "integrity",
           "Value": "sha256-wNsztU5NJ5G/Iz/Fcej8qT26v+ECqelbCU4y+9yWVVM="
+        }
+      ]
+    },
+    {
+      "Route": "js/minimum-age.9p1k56r7jw.js",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\obj\\Debug\\net9.0\\compressed\\9xpwyx7ohc-9p1k56r7jw.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003745318352"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "266"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"P8RH8FdS8lxh2AKQMdGlDN+F0dsGL5Fl0rFovINBVMc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 06:19:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"nbIrQbUKwJl9w+Jos6/y+GuhQXXsxvdaXiRfBkpHeH8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9p1k56r7jw"
+        },
+        {
+          "Name": "label",
+          "Value": "js/minimum-age.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nbIrQbUKwJl9w+Jos6/y+GuhQXXsxvdaXiRfBkpHeH8="
+        }
+      ]
+    },
+    {
+      "Route": "js/minimum-age.9p1k56r7jw.js",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\wwwroot\\js\\minimum-age.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nbIrQbUKwJl9w+Jos6/y+GuhQXXsxvdaXiRfBkpHeH8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 06:19:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9p1k56r7jw"
+        },
+        {
+          "Name": "label",
+          "Value": "js/minimum-age.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nbIrQbUKwJl9w+Jos6/y+GuhQXXsxvdaXiRfBkpHeH8="
+        }
+      ]
+    },
+    {
+      "Route": "js/minimum-age.9p1k56r7jw.js.gz",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\obj\\Debug\\net9.0\\compressed\\9xpwyx7ohc-9p1k56r7jw.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "266"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"P8RH8FdS8lxh2AKQMdGlDN+F0dsGL5Fl0rFovINBVMc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 06:19:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9p1k56r7jw"
+        },
+        {
+          "Name": "label",
+          "Value": "js/minimum-age.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-P8RH8FdS8lxh2AKQMdGlDN+F0dsGL5Fl0rFovINBVMc="
+        }
+      ]
+    },
+    {
+      "Route": "js/minimum-age.js",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\obj\\Debug\\net9.0\\compressed\\9xpwyx7ohc-9p1k56r7jw.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003745318352"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "266"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"P8RH8FdS8lxh2AKQMdGlDN+F0dsGL5Fl0rFovINBVMc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 06:19:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"nbIrQbUKwJl9w+Jos6/y+GuhQXXsxvdaXiRfBkpHeH8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nbIrQbUKwJl9w+Jos6/y+GuhQXXsxvdaXiRfBkpHeH8="
+        }
+      ]
+    },
+    {
+      "Route": "js/minimum-age.js",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\wwwroot\\js\\minimum-age.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nbIrQbUKwJl9w+Jos6/y+GuhQXXsxvdaXiRfBkpHeH8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 06:19:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nbIrQbUKwJl9w+Jos6/y+GuhQXXsxvdaXiRfBkpHeH8="
+        }
+      ]
+    },
+    {
+      "Route": "js/minimum-age.js.gz",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\obj\\Debug\\net9.0\\compressed\\9xpwyx7ohc-9p1k56r7jw.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "266"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"P8RH8FdS8lxh2AKQMdGlDN+F0dsGL5Fl0rFovINBVMc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 06:19:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-P8RH8FdS8lxh2AKQMdGlDN+F0dsGL5Fl0rFovINBVMc="
+        }
+      ]
+    },
+    {
+      "Route": "js/past-year.js",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\obj\\Debug\\net9.0\\compressed\\85dc8m3fkl-y3u62aeqbx.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003333333333"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "299"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hxXxDzUg724AQCEkK2JXUiVSoPOv3pB2DW9tlZJjrqM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Nov 2025 13:09:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Ehi55wrVidHvrB5W5joM7J41dWrVWn3V0rCIiO/JVCE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ehi55wrVidHvrB5W5joM7J41dWrVWn3V0rCIiO/JVCE="
+        }
+      ]
+    },
+    {
+      "Route": "js/past-year.js",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\wwwroot\\js\\past-year.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "597"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ehi55wrVidHvrB5W5joM7J41dWrVWn3V0rCIiO/JVCE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Nov 2025 13:09:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ehi55wrVidHvrB5W5joM7J41dWrVWn3V0rCIiO/JVCE="
+        }
+      ]
+    },
+    {
+      "Route": "js/past-year.js.gz",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\obj\\Debug\\net9.0\\compressed\\85dc8m3fkl-y3u62aeqbx.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "299"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hxXxDzUg724AQCEkK2JXUiVSoPOv3pB2DW9tlZJjrqM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Nov 2025 13:09:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hxXxDzUg724AQCEkK2JXUiVSoPOv3pB2DW9tlZJjrqM="
+        }
+      ]
+    },
+    {
+      "Route": "js/past-year.y3u62aeqbx.js",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\obj\\Debug\\net9.0\\compressed\\85dc8m3fkl-y3u62aeqbx.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003333333333"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "299"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hxXxDzUg724AQCEkK2JXUiVSoPOv3pB2DW9tlZJjrqM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Nov 2025 13:09:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Ehi55wrVidHvrB5W5joM7J41dWrVWn3V0rCIiO/JVCE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y3u62aeqbx"
+        },
+        {
+          "Name": "label",
+          "Value": "js/past-year.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ehi55wrVidHvrB5W5joM7J41dWrVWn3V0rCIiO/JVCE="
+        }
+      ]
+    },
+    {
+      "Route": "js/past-year.y3u62aeqbx.js",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\wwwroot\\js\\past-year.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "597"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ehi55wrVidHvrB5W5joM7J41dWrVWn3V0rCIiO/JVCE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Nov 2025 13:09:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y3u62aeqbx"
+        },
+        {
+          "Name": "label",
+          "Value": "js/past-year.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ehi55wrVidHvrB5W5joM7J41dWrVWn3V0rCIiO/JVCE="
+        }
+      ]
+    },
+    {
+      "Route": "js/past-year.y3u62aeqbx.js.gz",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\obj\\Debug\\net9.0\\compressed\\85dc8m3fkl-y3u62aeqbx.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "299"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hxXxDzUg724AQCEkK2JXUiVSoPOv3pB2DW9tlZJjrqM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Nov 2025 13:09:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y3u62aeqbx"
+        },
+        {
+          "Name": "label",
+          "Value": "js/past-year.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hxXxDzUg724AQCEkK2JXUiVSoPOv3pB2DW9tlZJjrqM="
         }
       ]
     },

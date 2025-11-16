@@ -1,0 +1,86 @@
+﻿@model AirBB.Models.Residence
+@{
+    ViewData["Title"] = "Residence Information";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-lg p-4">
+        <h2 class="mb-3">Residence Information</h2>
+        <p class="text-muted">Please fill in the residence details below.</p>
+
+        <hr />
+
+        <form asp-action="Edit" method="post">
+            <input asp-for="ResidenceId" hidden />
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label asp-for="Name" class="form-label fw-bold"></label>
+                    <input asp-for="Name" class="form-control" placeholder="Enter residence name" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="ClientId" class="form-label fw-bold"></label>
+                    <select asp-for="ClientId" asp-items="ViewBag.Clients" class="form-select">
+                        <option value="">-- Select Owner (Client) --</option>
+                    </select>
+                    <span asp-validation-for="ClientId" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label asp-for="GuestNumber" class="form-label fw-bold"></label>
+                    <input asp-for="GuestNumber" type="number" class="form-control" placeholder="Enter number of guests" />
+                    <span asp-validation-for="GuestNumber" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="BedroomNumber" class="form-label fw-bold"></label>
+                    <input asp-for="BedroomNumber" type="number" class="form-control" placeholder="Enter number of bedrooms" />
+                    <span asp-validation-for="BedroomNumber" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label asp-for="BathroomNumber" class="form-label fw-bold"></label>
+                    <input asp-for="BathroomNumber" type="number" class="form-control" placeholder="Enter number of bathrooms" />
+                    <span asp-validation-for="BathroomNumber" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="BuiltYear" class="form-label fw-bold"></label>
+                    <input asp-for="BuiltYear" type="date" class="form-control" />
+                    <span asp-validation-for="BuiltYear" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label asp-for="PricePerNight" class="form-label fw-bold"></label>
+                    <input asp-for="PricePerNight" class="form-control" placeholder="Enter price per night" />
+                    <span asp-validation-for="PricePerNight" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="LocationId" class="form-label fw-bold"></label>
+                    <select asp-for="LocationId" asp-items="ViewBag.Locations" class="form-select">
+                        <option value="">-- Select Location --</option>
+                    </select>
+                    <span asp-validation-for="LocationId" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <label asp-for="ResidencePicture" class="form-label fw-bold"></label>
+                    <input asp-for="ResidencePicture" class="form-control" placeholder="Enter image URL or path" />
+                    <span asp-validation-for="ResidencePicture" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="mt-4 d-flex justify-content-between">
+                <a asp-action="List" asp-controller="ManageResidence" class="btn btn-secondary">← Back to Residences</a>
+                <button type="submit" class="btn btn-primary">Save Residence</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+﻿@model AirBB.Models.Location
+@{
+    ViewData["Title"] = "Location Information";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-lg p-4">
+        <h2 class="mb-3">Location Information</h2>
+        <p class="text-muted">Please fill in the client details below.</p>
+
+        <hr />
+
+        <form asp-action="Edit" method="post">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label asp-for="Name" class="form-label fw-bold"></label>
+                    <input asp-for="Name" class="form-control" placeholder="Enter full name" />
+                    <input asp-for="LocationId" hidden />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="mt-4 d-flex justify-content-between">
+                <a asp-action="List" asp-controller="ManageLocation" class="btn btn-secondary">← Back to Location</a>
+                <button type="submit" class="btn btn-primary">Save Location</button>
+            </div>
+        </form>
+    </div>
+</div>

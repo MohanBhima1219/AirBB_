@@ -1,0 +1,58 @@
+﻿@model List<AirBB.Models.Location>
+@{
+    ViewData["Title"] = "Location";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2>Location</h2>
+        <a asp-controller="ManageLocation" asp-action="Add" class="btn btn-primary">
+            + Add New Location
+        </a>
+    </div>
+
+    @if (Model != null && Model.Any())
+    {
+        <div class="card shadow-lg p-4">
+            <h4 class="mb-3 text-primary">Location Details</h4>
+            <hr />
+
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Location Name</th>
+                            <th class="text-center">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var location in Model)
+                        {
+                            <tr>
+                                <td>@location.Name</td>
+                                <td class="text-center">
+                                    <a asp-controller="ManageLocation" asp-action="Edit"
+                                       asp-route-id="@location.LocationId"
+                                       class="btn btn-sm btn-outline-primary me-2">
+                                        Edit
+                                    </a>
+                                    <a asp-controller="ManageLocation" asp-action="Delete"
+                                       asp-route-id="@location.LocationId"
+                                       class="btn btn-sm btn-outline-danger">
+                                        Delete
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info text-center mt-4">
+            No locations found. <a asp-controller="ManageLocation" asp-action="Add">Add one now</a>.
+        </div>
+    }
+</div>

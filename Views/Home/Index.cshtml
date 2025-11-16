@@ -51,7 +51,7 @@
                         <input type="number" class="form-control" id="ActiveNoOfGuests" name="ActiveNoOfGuests" 
                                min="1" value="@(Model.ActiveNoOfGuests != "all" ? Model.ActiveNoOfGuests : "1")" />
                     </div>
-
+                    <a asp-action="Index" asp-controller="Home" class="btn btn-primary">Remove Filters</a>
                     <button type="submit" class="btn btn-primary w-100">Apply Filters</button>
                 </form>
             </div>

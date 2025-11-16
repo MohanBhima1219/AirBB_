@@ -1,0 +1,74 @@
+﻿@model AirBB.Models.Residence
+@{
+    ViewData["Title"] = "Delete Residence";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-lg p-4">
+        <h2 class="mb-3 text-danger">Confirm Deletion</h2>
+        <p class="text-muted">Are you sure you want to delete this residence?</p>
+
+        <hr />
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <strong>Residence ID:</strong> @Model.ResidenceId
+            </div>
+            <div class="col-md-6">
+                <strong>Name:</strong> @Model.Name
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <strong>Client ID:</strong> @Model.ClientId
+            </div>
+            <div class="col-md-6">
+                <strong>Client Name:</strong> @Model.Client?.Name
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <strong>Guest Number:</strong> @Model.GuestNumber
+            </div>
+            <div class="col-md-6">
+                <strong>Bedroom Number:</strong> @Model.BedroomNumber
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <strong>Bathroom Number:</strong> @Model.BathroomNumber
+            </div>
+            <div class="col-md-6">
+                <strong>Built Year:</strong> @Model.BuiltYear.ToString("yyyy")
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <strong>Price Per Night:</strong> $@Model.PricePerNight
+            </div>
+            <div class="col-md-6">
+                <strong>Location:</strong> @Model.Location?.Name
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <strong>Residence Picture:</strong><br />
+                <img src="~/images/@Model.ResidencePicture" alt="Residence Image" class="img-fluid rounded shadow-sm mt-2" style="max-width: 250px;">
+            </div>
+        </div>
+
+        <form asp-action="Delete" method="post" class="mt-4">
+            <input type="hidden" asp-for="ResidenceId" />
+
+            <div class="d-flex justify-content-between">
+                <a asp-action="List" asp-controller="ManageResidence" class="btn btn-secondary">← Cancel</a>
+                <button type="submit" class="btn btn-danger">Delete Residence</button>
+            </div>
+        </form>
+    </div>
+</div>

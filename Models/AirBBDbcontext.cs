@@ -20,10 +20,10 @@ namespace AirBB.Models
             );
 
             modelBuilder.Entity<Residence>().HasData(
-                new Residence { ResidenceId = 1, Name = "Chicago Loop Apartment", ResidencePicture = "chi_loop.png", LocationId = 1, GuestNumber = 4, BedroomNumber = 2, BathroomNumber = 1, PricePerNight = "100" },
-                new Residence { ResidenceId = 2, Name = "New York Studio", ResidencePicture = "ny_studio.png", LocationId = 2, GuestNumber = 2, BedroomNumber = 1, BathroomNumber = 1, PricePerNight = "120" },
-                new Residence { ResidenceId = 3, Name = "Miami Beach House", ResidencePicture = "miami_beach.png", LocationId = 3, GuestNumber = 8, BedroomNumber = 4, BathroomNumber = 3, PricePerNight = "50" },
-                new Residence { ResidenceId = 4, Name = "Atlanta Suburban House", ResidencePicture = "atl_house.png", LocationId = 4, GuestNumber = 6, BedroomNumber = 3, BathroomNumber = 2, PricePerNight = "70" }
+                new Residence { ResidenceId = 1, ClientId = 1, Name = "Chicago Loop Apartment", ResidencePicture = "chi_loop.png", LocationId = 1, GuestNumber = 4, BedroomNumber = 2, BathroomNumber = 1, PricePerNight = "100", BuiltYear = new DateTime(2000, 2, 12) },
+                new Residence { ResidenceId = 2, ClientId = 3, Name = "New York Studio", ResidencePicture = "ny_studio.png", LocationId = 2, GuestNumber = 2, BedroomNumber = 1, BathroomNumber = 1, PricePerNight = "120", BuiltYear = new DateTime(1990, 1, 14) },
+                new Residence { ResidenceId = 3, ClientId = 2, Name = "Miami Beach House", ResidencePicture = "miami_beach.png", LocationId = 3, GuestNumber = 8, BedroomNumber = 4, BathroomNumber = 3, PricePerNight = "50", BuiltYear = new DateTime(2011, 3, 8) },
+                new Residence { ResidenceId = 4, ClientId = 1, Name = "Atlanta Suburban House", ResidencePicture = "atl_house.png", LocationId = 4, GuestNumber = 6, BedroomNumber = 3, BathroomNumber = 2, PricePerNight = "70", BuiltYear = new DateTime(2002, 5, 20) }
             );
 
             modelBuilder.Entity<Reservation>().HasData(
@@ -38,7 +38,9 @@ namespace AirBB.Models
                     Name = "John Doe",
                     PhoneNumber = "555-000-0001",
                     Email = "john.Doe@airbb.com",
-                    DOB = "07/08/2000",
+                    DOB = new DateTime(2000, 07, 08),
+                    SSN = "232-24-2421",
+                    UserType = "Owner",
                 },
                 new Client
                 {
@@ -46,7 +48,9 @@ namespace AirBB.Models
                     Name = "Emy",
                     PhoneNumber = "555-000-0002",
                     Email = "emy@airbb.com",
-                    DOB = "07/08/2001",
+                    DOB = new DateTime(2001, 07, 08),
+                    SSN = "123-45-6789",
+                    UserType = "Client",
                 },
                 new Client
                 {
@@ -54,7 +58,9 @@ namespace AirBB.Models
                     Name = "Ana Smith",
                     PhoneNumber = "555-000-0003",
                     Email = "anasmith@airbb.com",
-                    DOB = "07/08/2002",
+                    DOB = new DateTime(2002, 07, 08),
+                    SSN = "235-74-7456",
+                    UserType = "Admin",
                 }
             );
 

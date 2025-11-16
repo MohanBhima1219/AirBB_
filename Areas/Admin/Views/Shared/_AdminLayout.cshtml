@@ -15,7 +15,20 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+            <div class="navbar-nav me-auto">
+                <a class="nav-item nav-link
+                      @(controller == "Home" && action == "Index" ? "active" : "")"
+                   asp-area="Admin" asp-controller="Home" asp-action="Index">Home</a>
+                <a class="nav-item nav-link
+                      @(controller == "ManageClient" && action == "List" ? "active" : "")"
+                   asp-area="Admin" asp-controller="ManageClient" asp-action="List">Manage Client</a>
+                <a class="nav-item nav-link
+                      @(controller == "ManageLocation" && action == "List" ? "active" : "")"
+                   asp-area="Admin" asp-controller="ManageLocation" asp-action="List">Manage Location</a>
+                <a class="nav-item nav-link
+                      @(controller == "ManageResidence" && action == "List" ? "active" : "")"
+                   asp-area="Admin" asp-controller="ManageResidence" asp-action="List">Manage Residence</a>
+            </div>
             <div class="navbar-nav navbar-right">
                 <a class="nav-link"
                    asp-area="" asp-controller="Home" asp-action="Index">Site</a>

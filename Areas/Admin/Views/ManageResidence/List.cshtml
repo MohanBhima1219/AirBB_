@@ -1,0 +1,71 @@
+﻿@model List<AirBB.Models.Residence>
+@{
+    ViewData["Title"] = "Residences";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2>Residences</h2>
+        <a asp-controller="ManageResidence" asp-action="Add" class="btn btn-primary">
+            + Add New Residence
+        </a>
+    </div>
+
+    @if (Model != null && Model.Any())
+    {
+        <div class="card shadow-lg p-4">
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Residence ID</th>
+                            <th>Name</th>
+                            <th>Owner</th>
+                            <th>Location</th>
+                            <th>Guests</th>
+                            <th>Bedrooms</th>
+                            <th>Bathrooms</th>
+                            <th>Built Year</th>
+                            <th>Price / Night</th>
+                            <th>Image</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var residence in Model)
+                        {
+                            <tr>
+                                <td>@residence.ResidenceId</td>
+                                <td>@residence.Name</td>
+                                <td>@residence.Client?.Name</td>
+                                <td>@residence.Location?.Name</td>
+                                <td>@residence.GuestNumber</td>
+                                <td>@residence.BedroomNumber</td>
+                                <td>@residence.BathroomNumber</td>
+                                <td>@residence.BuiltYear.ToString("yyyy")</td>
+                                <td>$@residence.PricePerNight</td>
+                                <td>
+                                    <img src="~/images/@residence.ResidencePicture" alt="@residence.Name" width="70" height="50" class="rounded shadow-sm" />
+                                </td>
+                                <td>
+                                    <div class="d-flex gap-2">
+                                        <a asp-controller="ManageResidence" asp-action="Edit" asp-route-id="@residence.ResidenceId"
+                                           class="btn btn-outline-primary btn-sm">Edit</a>
+                                        <a asp-controller="ManageResidence" asp-action="Delete" asp-route-id="@residence.ResidenceId"
+                                           class="btn btn-outline-danger btn-sm">Delete</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info text-center mt-4">
+            No residences found. <a asp-controller="ManageResidence" asp-action="Add">Add one now</a>.
+        </div>
+    }
+</div>

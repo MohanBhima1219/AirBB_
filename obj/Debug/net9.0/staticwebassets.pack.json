@@ -37,6 +37,14 @@
       "PackagePath": "staticwebassets\\images\\ny_studio.png"
     },
     {
+      "Id": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\wwwroot\\js\\minimum-age.js",
+      "PackagePath": "staticwebassets\\js\\minimum-age.js"
+    },
+    {
+      "Id": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\wwwroot\\js\\past-year.js",
+      "PackagePath": "staticwebassets\\js\\past-year.js"
+    },
+    {
       "Id": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Aravind\\AirBB\\AirBB\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
